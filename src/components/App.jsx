@@ -49,7 +49,7 @@ export const App = () => {
   return (
     <>
       <Section title="Please leave feedback">
-        <FeedbackOptions onLeaveFeedback={onLeaveFeedback}  options={['good', 'neutral', 'bad']} />
+        <FeedbackOptions onLeaveFeedback={onLeaveFeedback}  options={Object.keys({good, neutral, bad})} />
       </Section>
       {hasFeedback ? 
       <Section title="Statistic">
